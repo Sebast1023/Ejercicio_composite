@@ -1,5 +1,5 @@
 from expresion import Expresion
-class operacion(Expresion):
+class Operacion(Expresion):
     def __init__(self, a=None, b=None):
         self.a = a
         self.b = b
