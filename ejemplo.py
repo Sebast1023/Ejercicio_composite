@@ -1,10 +1,10 @@
 from numero import Numero
-from suma import suma
-from multiplicacion import multiplicacion
-from division import division
+from suma import Suma
+from multiplicacion import Multiplicacion
+from division import Division
 
 #((4+5)+(3*2))/3
-ejemplo = division(suma(suma(Numero(4),Numero(5)), multiplicacion(Numero(3),Numero(2))), Numero(3))
+ejemplo = Division(Suma(Suma(Numero(4),Numero(5)), Multiplicacion(Numero(3),Numero(2))), Numero(3))
 
 try:
     print("((4+5)+(3*2))/3 = "+ str(ejemplo.evaluar()))

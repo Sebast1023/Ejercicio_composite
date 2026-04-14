@@ -1,5 +1,5 @@
-from operacion import operacion
-class division(operacion):
+from operacion import Operacion
+class Division(Operacion):
     def evaluar(self):
         a = self.a.evaluar() if self.a else 0
         b = self.b.evaluar() if self.b else 0
